@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stuff.css">
+</head>
+<body>
+    <script src="main.js"></script>
+    <button onclick="showAlert()" class="hakt">Geometry</button>
+    <script>
+        function showAlert() {
+            alert("Do you want to continue?");
+            var links = [
+                "https://www.youtube.com/watch?v=79wQenmbG3Q&t=11s",
+                "https://www.youtube.com/watch?v=ZO5vQg4Bliw&t=63s",
+                "https://www.youtube.com/watch?v=6ihGECyJ5Oc",
+                "https://www.youtube.com/watch?v=mgQL2xeviN8",
+                "https://www.youtube.com/watch?v=ryBbuH_SPbs"
+            ];
+            var randomLink = links[Math.floor(Math.random() * links.length)];
+            window.location.href = randomLink;
+        }
+    </script>
+</body>
+</html>
